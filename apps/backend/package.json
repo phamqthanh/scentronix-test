@@ -1,0 +1,28 @@
+{
+  "name": "@scentronix/backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "start": "tsx src/main.ts",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20",
+    "@vitest/coverage-istanbul": "^2.1.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "vitest": "^2.1.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
